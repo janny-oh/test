@@ -1,0 +1,22 @@
+# 비밀번호, 암호화 키, 서버 개인키
+/auth/
+/passwd
+/splunk.secret
+**/passwords.conf
+**/*.key
+**/*private*.pem
+
+# 임시 파일 및 실행 중 생성되는 파일
+*.pyc
+**/__pycache__/
+*.log
+users/**/history/*
+**/login-info.cfg
+**/ui-prefs.conf
+**/telemetry.conf
+
+# 변경이 잦은 lookup 파일
+**/lookups/*
+
+# 꼭 보관할 lookup만 다시 포함
+!apps/search/lookups/my_important_lookup.csv
